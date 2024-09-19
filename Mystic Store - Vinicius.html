@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Store - Loja Streetwear</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #666;
+        }
+
+        .banner {
+            background-image: url('https://images.unsplash.com/photo-1596788554152-9b08f8d8e5c1'); /* Banner de exemplo */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        .produtos {
+            padding: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .produto {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .produto img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .produto h3 {
+            font-size: 20px;
+            margin: 15px 0 10px;
+        }
+
+        .produto p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .produto .preco {
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .produto:hover {
+            transform: scale(1.05);
+        }
+
+        .contato {
+            padding: 40px;
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+        }
+
+        .contato h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .contato a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .contato a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .produto-detalhes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .produto-detalhes img {
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .produto-detalhes h1 {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+
+        .produto-detalhes p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .produto-detalhes .preco {
+            font-size: 24px;
+            color: #333;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .voltar {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .voltar:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Página Inicial -->
+    <header>
+        <h1>Mystic Store</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section class="banner" id="home">
+        <h1>Descubra o Estilo da Mystic Store</h1>
+        <p>Conecte-se com a moda urbana e descolada que define o estilo streetwear.</p>
+    </section>
+
+    <section class="produtos" id="produtos">
+        <a href="#camiseta" class="produto">
+            <img src="https://cdn.shopify.com/s/files/1/0266/3340/products/White_Tshirt_1_grande.png?v=1599343640" alt="Camiseta Streetwear">
+            <h3>Camiseta Streetwear</h3>
+            <p>Design exclusivo que destaca seu estilo urbano.</p>
+            <p class="preco">R$ 99,90</p>
+        </a>
+        <a href="#bone" class="produto">
+            <img src="https://cdn.shopify.com/s/files/1/0266/3340/products/Black_Cap_1_grande.png?v=1599343640" alt="Boné Streetwear">
+            <h3>Boné Streetwear</h3>
+            <p>Um toque de atitude para completar seu visual.</p>
+            <p class="preco">R$ 59,90</p>
+        </a>
+        <a href="#moletom" class="produto">
+            <img src="https://cdn.shopify.com/s/files/1/0266/3340/products/Gray_Hoodie_1_grande.png?v=1599343640" alt="Moletom Streetwear">
+            <h3>Moletom Streetwear</h3>
+            <p>Conforto e estilo no seu melhor.</p>
+            <p class="preco">R$ 149,90</p>
+        </a>
+        <a href="#corrente" class="produto">
+            <img src="https://cdn.shopify.com/s/files/1/0266/3340/products/Silver_Chain_1_grande.png?v=1599343640" alt="Corrente Streetwear">
+            <h3>Corrente Streetwear</h3>
+            <p>Adicione um toque de sofisticação ao seu look.</p>
+            <p class="preco">R$ 79,90</p>
+        </a>
+        <a href="#tenis" class="produto">
+            <img src="https://cdn.shopify.com/s/files/1/0266/3340/products/White_Sneakers_1_grande.png?v=1599343640" alt="Tênis Streetwear">
+            <h3>Tênis Streetwear</h3>
+            <p>Conforto e estilo para suas aventuras urbanas.</p>
+            <p class="preco">R$ 199,90</p>
+        </a>
+    </section>
+
+    <section class="contato" id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações sobre nossos produtos e serviços. Estamos sempre prontos para ajudar você a encontrar o melhor estilo streetwear!</p>
+        <a href="https://instagram.com/mysticstore" target="_blank">Instagram: @mysticstore</a>
+        <a href="mailto:contato@mysticstore.com">Email: contato@mysticstore.com</a>
+        <a href="https://facebook.com/mysticstore" target="_blank">Facebook: Mystic Store</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mystic Store. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
